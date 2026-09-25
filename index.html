@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>A Garden Made For You 🌻</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grain"></div>
+<div id="loading-screen"><div class="loading-flower">🌻</div><p>growing something...</p></div>
+
+<div class="world" id="world">
+  <div class="sky sky-day"></div>
+  <div class="sun" id="sun"></div>
+  <div class="cloud cloud-one"></div><div class="cloud cloud-two"></div><div class="cloud cloud-three"></div>
+  <div class="mountains"></div>
+  <div class="atmosphere"></div>
+  <div class="field"><div class="grass back"></div><div class="grass front"></div></div>
+  <div id="sunflower-field"></div>
+  <div id="fireflies"></div>
+  <div id="butterflies"></div>
+</div>
+
+<main>
+
+<section class="hero-section">
+  <div class="hero-content">
+    <div class="text-scrim"></div>
+    <span class="eyebrow">a little place on the internet</span>
+    <h1>A Garden<br><em>Made For You</em></h1>
+    <p class="hero-description">I wanted to make something a little different. So instead of simply writing it down... I made you a garden.</p>
+    <button class="scroll-button" data-scroll="#intro"><span>walk with me</span><span>↓</span></button>
+  </div>
+  <div class="hero-scroll"><span>scroll slowly</span><div class="scroll-line"></div></div>
+</section>
+
+<section class="intro-section" id="intro">
+  <div class="chapter reveal">
+    <div class="text-scrim"></div>
+    <span class="chapter-mark">before we begin</span>
+    <h2>Some things<br>are better <em>grown.</em></h2>
+    <div class="divider"></div>
+    <p>Like flowers. Like memories. Like getting to know someone little by little.</p>
+    <p class="soft">So take your time. There is no need to rush through this.</p>
+    <button class="text-button" data-scroll="#flower-section">let's keep walking →</button>
+  </div>
+</section>
+
+<section class="flower-section" id="flower-section">
+  <div class="flower-copy reveal">
+    <div class="text-scrim"></div>
+    <span class="chapter-mark">something for you</span>
+    <h2>Find the little<br><em>sunflowers.</em></h2>
+    <p>There are a few hidden messages waiting somewhere in the garden.</p>
+    <p class="hint-text">click the flowers 🌻</p>
+    <div class="flower-progress"><span id="flower-count">0</span><span>/</span><span id="flower-total">5</span><span class="progress-label">found</span></div>
+  </div>
+  <div class="flower-garden-area" id="interactive-garden"><div class="garden-glow"></div><div class="interactive-ground"></div></div>
+  <div class="activity-complete" id="flower-complete"><span>✦</span><p>You found them all.</p><small>I knew you'd notice.</small></div>
+</section>
+
+<section class="little-things-section">
+  <div class="little-things-wrap">
+    <div class="chapter reveal">
+      <div class="text-scrim"></div>
+      <span class="chapter-mark">little things</span>
+      <h2>It's the small<br>things that <em>stay.</em></h2>
+      <p>A random conversation. A silly laugh. A message you didn't expect. A moment that somehow stays in your head.</p>
+    </div>
+    <div class="floating-notes">
+      <button class="memory-note note-one"><span>✦</span>a random laugh</button>
+      <button class="memory-note note-two"><span>✦</span>late conversations</button>
+      <button class="memory-note note-three"><span>✦</span>little updates</button>
+      <button class="memory-note note-four"><span>✦</span>simply being there</button>
+    </div>
+    <div class="memory-reveal" id="memory-reveal">
+      <span class="close-memory">×</span><span class="memory-symbol">✦</span>
+      <p id="memory-text">Some things don't need a reason to become memorable.</p>
+    </div>
+  </div>
+</section>
+
+<section class="heart-section" id="heart-section">
+  <div class="heart-background"></div>
+  <div class="heart-copy">
+    <div class="text-scrim"></div>
+    <span class="chapter-mark">something is growing</span>
+    <h2 style="font-family:var(--serif);font-size:clamp(52px,8vw,88px);line-height:.9;font-weight:500">Wait until<br><em>you see this.</em></h2>
+    <p style="margin-top:20px;color:rgba(255,255,255,.7)">Keep scrolling.</p>
+  </div>
+  <div id="tulip-heart"></div>
+  <div class="heart-message">
+    <div class="text-scrim"></div>
+    <span class="heart-label">just for you</span>
+    <h3>You make ordinary days<br>feel a little different.</h3>
+    <p>And honestly...</p>
+    <p class="final-line">I'm really glad I got to know you.</p>
+  </div>
+</section>
+
+<section class="sunset-section">
+  <div class="sunset-sky"></div><div class="sunset-sun"></div>
+  <div class="time-content reveal">
+    <div class="text-scrim"></div>
+    <span class="chapter-mark">before the night</span>
+    <h2 style="font-family:var(--serif);font-size:clamp(50px,7vw,80px);line-height:.9;font-weight:500">Some moments<br>deserve to <em>last.</em></h2>
+    <p>So let's stay here for just a little longer.</p>
+  </div>
+</section>
+
+<section class="night-section">
+  <div class="night-sky"></div><div class="stars" id="stars"></div><div class="moon"></div>
+  <div class="night-fireflies" id="night-fireflies"></div>
+  <div class="time-content reveal">
+    <div class="text-scrim"></div>
+    <span class="chapter-mark">when everything gets quiet</span>
+    <h2 style="font-family:var(--serif);font-size:clamp(50px,7vw,80px);line-height:.9;font-weight:500">Look at the<br><em>stars.</em></h2>
+    <p>Even the quietest moments can be beautiful.</p>
+  </div>
+</section>
+
+<section class="secret-section">
+  <button id="secretButton" class="secret-trigger"><span>✦</span>one more thing<span>✦</span></button>
+</section>
+
+<section class="final-section" id="final-section">
+  <canvas id="fireworks"></canvas>
+  <div class="final-stars"></div><div class="final-moon"></div>
+  <div class="firework-hint"><span>✦</span><p>make a wish</p><small>click anywhere</small></div>
+  <div class="final-content">
+    <div class="text-scrim"></div>
+    <span class="eyebrow">and that's the little garden</span>
+    <h2>I'm really glad<br><em>you're here.</em></h2>
+    <p>I don't know where this little journey goes. And maybe that's what makes it nice.</p>
+    <p>No pressure. No rushing. Just two people getting to know each other.</p>
+    <div class="final-divider"><span>✦</span></div>
+    <p class="final-last">So for now...</p>
+    <strong>I'm just happy I met you.</strong>
+  </div>
+</section>
+
+</main>
+
+<div id="secretOverlay" class="secret-overlay">
+  <div class="secret-stars" id="secret-stars"></div>
+  <div class="secret-petals" id="secret-petals"></div>
+  <div class="secret-content">
+    <div class="text-scrim"></div>
+    <span class="chapter-mark">you found it</span>
+    <div class="secret-symbol">✦</div>
+    <h2>Maybe this<br><em>wasn't just a garden.</em></h2>
+    <p>Maybe it was just my little way of showing you how happy I am that you're here.</p>
+    <p class="secret-small">Thank you for being someone worth making all of this for.</p>
+    <button id="closeSecret">back to the garden</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
